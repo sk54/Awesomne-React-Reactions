@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Redirect, Switch, Link } from 'react-router-dom'
 import { Home, About, Contacts, Errors } from './Pages'
+import Navigation from './Components'
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker'
@@ -64,7 +65,7 @@ const NavBar = () => {
 ReactDOM.render(
     <HashRouter>
         <div>
-            <NavBar />
+            <Navigation />
             <div>
                 <Switch>
                     <Route exact path="/" component={Home} />
